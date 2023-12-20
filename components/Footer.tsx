@@ -35,7 +35,7 @@ const Footer = () => (
     </div>
 
     <div className='flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10'>
-      <p>&copy; Developed By <a href="https://sriramvaishnav.com" className="hover:text-primary-blue">Sriram Vaishnav</a></p>
+      <p>&copy; Developed By <a href="https://sriramvaishnav.com" target="_blank" className="text-primary-blue hover:underline">Sriram Vaishnav</a></p>
 
       <div className="footer__copyrights-link">
         <Link href="/" className="text-gray-500">
