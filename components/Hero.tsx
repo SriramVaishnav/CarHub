@@ -1,23 +1,25 @@
-'use client';
+"use client";
 
-import Image from "next/image"
-import CustomButton from "./CustomButton"
+import Image from "next/image";
+import CustomButton from "./CustomButton";
 
 const Hero = () => {
+  const handleScroll = () => {
+    const nextSection = document.getElementById("discover");
 
-    const handleScroll = () => {
-
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
 
   return (
     <div className="hero">
       <div className="flex-1 pt-20 padding-x">
-        <h1 className="hero__title">
-          Find your fav car — quick and easy!
-        </h1>
+        <h1 className="hero__title">Find your fav car — quick and easy!</h1>
 
         <p className="hero__subtitle">
-          A concept car rental application with advanced search and filtering options.
+          A concept car rental application with advanced search and filtering
+          options.
         </p>
 
         <CustomButton
@@ -26,7 +28,7 @@ const Hero = () => {
           handleClick={handleScroll}
         />
       </div>
-      
+
       <div className="hero__image-container">
         <div className="hero__image">
           <Image src="/hero.png" alt="hero" fill className="object-contain" />
@@ -35,7 +37,7 @@ const Hero = () => {
         <div className="hero__image-overlay" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
